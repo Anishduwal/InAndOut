@@ -1,0 +1,23 @@
+﻿@model InAndOut.Models.Item
+
+    <form method="post" asp-action="Create">
+        <div class="row">
+            <h2>Add Item</h2>
+            <div class="col">
+                <label asp-for="ItemName"></label>
+                <input asp-for="ItemName" class="form-control" placeholder="Item Name">
+            </div>
+            <div class="col">
+                <label asp-for="Borrower"></label>
+                <input asp-for="Borrower" class="form-control" placeholder="Borrower Name">
+            </div>
+            <div class="col">
+                <label asp-for="Lender"></label>
+                <input asp-for="Lender" class="form-control" placeholder="Lender Name">
+            </div>
+            <div>
+                <input class="btn btn-primary w-75" type="submit" value="Create">
+                <a asp-action="Index" class="btn btn-danger w-75" value="Back">Back</a>
+            </div>
+        </div>
+    </form>
